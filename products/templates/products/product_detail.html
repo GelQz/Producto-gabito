@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalles del Producto{% endblock %}
+
+{% block content %}
+<div class="detail-container">
+    <h2>{{ product.name }}</h2>
+    <div class="detail-content">
+        <div class="detail-image">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        </div>
+        <div class="detail-description">
+            <p>{{ product.description }}</p>
+        </div>
+    </div>
+    <a href="{% url 'product_list' %}" class="btn">Volver a la lista</a>
+</div>
+{% endblock %}

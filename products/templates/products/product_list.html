@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Productos{% endblock %}
+
+{% block content %}
+<div class="list-container">
+    <h2 class="titulo-componentes">Componentes</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Marca</th>
+            <th class="actions-column">Acciones</th>
+        </tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.stock }}</td>
+            <td>{{ product.brand }}</td>
+            <td class="actions-column">
+                <a href="{% url 'product_detail' product.id %}" class="btn">Ver detalles</a>
+                <a href="{% url 'product_delete' product.id %}" class="btn">Eliminar</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5">No hay productos registrados</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class="add-product-container">
+        <a href="{% url 'product_add' %}" class="btn-add-product">Agregar Producto</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Sitio{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>GelQz Store</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'product_list' %}">Productos</a></li>
+                <li><a href="{% url 'users:location' %}">Ubicación</a></li>
+                <li><a href="{% url 'users:user_list' %}">Usuarios</a></li>
+                <li><a href="{% url 'users:signout' %}">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '67c1349b17a3a062dc43beb9' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production', 
+                voice: { 
+                  url: "https://runtime-api.voiceflow.com" 
+                }
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>

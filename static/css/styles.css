@@ -1,0 +1,322 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f0f0; /* Fondo más agradable */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('../images/servidores.jfif'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    color: #fff; /* Cambiar el color del título a blanco */
+}
+
+nav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #585555;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn, .form-container form button {
+    display: inline-block;
+    padding: 5px 10px; /* Ajusta el tamaño de los botones */
+    margin: 5px 0;
+    background-color: #585555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: auto; /* Ajusta el ancho de los botones */
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 17px; /* Ajusta el tamaño de la fuente */
+    border: none; /* Eliminar borde */
+}
+
+.btn:hover, .form-container form button:hover {
+    background-color: #0c54c0;
+}
+
+.btn-delete {
+    background-color: #585555;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #2980b9;
+}
+
+.form-container {
+    max-width: 600px; /* Ajusta el ancho del recuadro */
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos del formulario */
+}
+
+.form-container form .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los campos */
+}
+
+.form-container form input,
+.form-container form textarea,
+.form-container form select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Ajusta el ancho de los campos de entrada */
+    max-width: 300px; /* Establece un ancho máximo para los campos de entrada */
+    box-sizing: border-box;
+}
+
+.form-container form input[type="number"],
+.form-container form input[type="text"],
+.form-container form textarea {
+    max-width: 300px; /* Ajusta el ancho del campo de precio, nombre y descripción */
+}
+
+.form-container form textarea {
+    height: 100px; /* Ajusta la altura del campo de descripción */
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.detail-container {
+    max-width: 600px; /* Ajusta el ancho del recuadro */
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.detail-description {
+    text-align: left;
+    width: 100%;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-logout {
+    padding: 10px 20px;
+    background-color: #4b4646;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none; /* Eliminar borde */
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #2980b9;
+}
+
+.list-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #3d2286;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.add-product-container {
+    text-align: center;
+}
+
+.btn-add-product {
+    background-color: #333;
+    color: #fff;
+    border: none; /* Eliminar borde */
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-add-product:hover {
+    background-color: #575757;
+}
+
+.actions-column {
+    width: 150px; /* Ajusta el ancho de la columna de acciones */
+    text-align: center;
+}
+
+.titulo-componentes {
+    color: #ffffff; /* Cambia este valor por el color que desees */
+}
+.titulo-lista-usuarios {
+    color: #ffffff; /* Cambia este valor por el color que desees */
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #3d2286; /* Color de fondo morado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.title-container {
+    background-color: #ccc; /* Color de fondo gris */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta la altura según sea necesario */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+}
+
+.map-title {
+    font-size: 35px;
+    color: #333;
+    text-align: center; /* Centra el texto del título */
+}
+
+#map-container {
+    width: 800px; /* Ajusta el ancho del contenedor del mapa */
+    height: 600px; /* Ajusta la altura del contenedor del mapa */
+    border: 2px solid #ccc; /* Color y grosor del borde del recuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el recuadro */
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
